@@ -1,36 +1,53 @@
 # reindenter
-Python Code Reindenter for PEP8 Compliance (with GUI)
-Description
 
-This tool provides a graphical interface for the reindenter.py script, which reindents Python code to comply with PEP8 standards. It’s designed to help users clean up and standardize the indentation in Python scripts, making code more readable and organized. This GUI-based tool allows you to load a Python file, reset indentation, apply PEP8-compliant indentation, and save the updated file.
+### ✔ Corrected Description for Your New Ef-Reindenter (v2.0+)
 
-Features
+**Ef-Reindenter** is an advanced Python code reindentation and light-refactoring tool with a full GUI.
+It repairs indentation, organizes imports, applies PEP 8 formatting, and includes safe AST-aware refactor features.
 
-File Upload: Select a .py file directly from your system to load it into the tool.
-Reset Indentation: Remove existing indentation inconsistencies, replace tabs with spaces, and apply a uniform format.
-Apply PEP8 Indentation: Re-indent the code following PEP8 standards, handling block structures and multi-line constructs.
-Save File: Save the reformatted code back to your system.
-How It Works
+Unlike the older minimal edition, this version includes a **smart structural “healer”** that can fix badly-broken indentation *even when the code does not parse*, and then reindent cleanly.
 
-The GUI implementation includes the following main functions, accessible through buttons and options within the interface:
+---
 
-Load File: Loads the content of a Python file for reformatting.
-Reset Indentation: Strips existing indentation inconsistencies and prepares the code for reindentation.
-Apply Indent: Applies consistent indentation (default: 4 spaces) to the loaded code, following PEP8 recommendations.
-Save File: Saves the reformatted code to a specified file location.
-Usage
+### ✔ Correct Version (You can paste this in GitHub)
 
-Open the GUI Application: Start the reindenter.py tool with the GUI option.
-Load a Python File: Use the "Load File" button to select a .py file from your local directory.
-View Original Code: Once loaded, the original code will display within the application window.
-Reset and Reindent:
-Reset Indentation: Click this option to remove any inconsistent or non-PEP8 indentation.
-Apply PEP8 Indentation: Choose this to apply consistent, PEP8-compliant indentation (4 spaces per indent level).
-Save the Formatted Code: Click the "Save File" button to save the reindented file to your preferred location.
-Example Output
+# **Ef-Reindenter**
 
-After following these steps, the reindented file will display consistent and clean indentation, improving readability and maintainability. You can also adjust the indentation level by specifying the number of spaces in the settings.
+Python Code Reindenter & Formatter (GUI, PEP 8, Structural Repair)
 
-License
+**Ef-Reindenter** is a graphical Python formatting tool that repairs indentation, fixes broken block structure, formats code to PEP 8, organizes imports, and applies safe refactor transformations.
+It is the enhanced successor to the legacy “Python Reindenter” tool.
 
-The reindenter.py script is released under the MIT License, which allows for free use, modification, and distribution.
+## **Features**
+
+* **Smart Reindentation** – Applies consistent indentation (default 4 spaces) using a corrected logic engine.
+* **Structural Repair Layer** – Fixes misaligned `else/elif/except`, stray `return` lines, broken method indentation, and other block-level damage before reindenting.
+* **Works Even on Broken Code** – `Apply Indent` no longer requires valid syntax; it can clean up heavily malformed files.
+* **PEP 8 Formatter** – Normalizes whitespace, comments, blank lines, operator spacing, and long lines.
+* **Import Organizer** – Groups and sorts stdlib, third-party, and local imports.
+* **Safe Refactor Tools** – Remove unused imports, simplify boolean returns, convert simple `.format()` and `%` strings to f-strings.
+* **File Load & Save** – Clean GUI workflow for loading, reformatting, and saving Python files.
+
+## **How It Works**
+
+1. Load a `.py` file into the GUI.
+2. (Optional) Reset indentation or start directly.
+3. Apply:
+
+   * **Apply Indent** → fixes and reindents (works even with SyntaxErrors).
+   * **PEP 8 Format** → full AST-safe formatting pipeline.
+   * **Organize Imports** → restructures import blocks.
+   * **Refactor Tools** → safe transformations.
+4. Save the result.
+
+## **When to Use It**
+
+* Cleaning up inconsistent indentation
+* Fixing broken or pasted code
+* Preparing code for review
+* Reformatting legacy scripts
+* Quickly organizing imports or simplifying logic
+
+## **License**
+
+Released under **GPL-3.0** (matching your header conventions).
